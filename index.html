@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso SIGED</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            cursor: pointer;
+        }
+        .container {
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .container h1 {
+            margin: 0 0 15px;
+            font-size: 18px;
+        }
+        .credentials {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .hint {
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body onclick="redirectToSiged()">
+    <div class="container">
+        <h1>Credenciales de acceso</h1>
+        <div class="credentials">
+            <strong>Usuario:</strong> 33459335<br>
+            <strong>Contraseña:</strong> 33459335*
+ <br><br><strong>Usuario:</strong>35535428 <br>
+            <strong>Contraseña:</strong> 35535428*
+        </div>
+        <div class="hint">(Haz clic en cualquier lugar para ir al sitio)</div>
+    </div>
+
+    <script>
+        function redirectToSiged() {
+            window.location.href = "https://siged7.siged.com.uy/sigedxGalileo/";
+        }
+    </script>
+</body>
+</html>
